@@ -5,7 +5,7 @@ import bodyParser from 'body-parser'
 const app = express();
 const PORT = 6253;
 
-app.use(bodyParser.json())
+app.use(express.json())
 app.use(cors());
 
 app.listen(PORT, () => console.log (`Server running on port ${PORT}`));
