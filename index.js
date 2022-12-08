@@ -33,7 +33,6 @@ app.post('/user', (req, res) => {
 
     const user = req.body;
     users.push(user);
-
     res.send('reached');
 })
 
